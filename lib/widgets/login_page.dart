@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -18,7 +19,7 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 30),
               // --- LOGO CLICKEABLE PARA VOLVER AL SPLASH ---
               GestureDetector(
-                onTap: () => Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false),
+                onTap: () => context.go('/splash'),
                 child: Text(
                   "M",
                   style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold, color: primaryColor),
@@ -61,7 +62,7 @@ class LoginPage extends StatelessWidget {
                 width: double.infinity,
                 height: 55,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => context.go('/home'),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: primaryColor,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
@@ -76,7 +77,7 @@ class LoginPage extends StatelessWidget {
                     const Text("¿No tienes una cuenta?", style: TextStyle(fontSize: 15)),
                     const SizedBox(height: 10),
                     OutlinedButton(
-                      onPressed: () => Navigator.pushNamed(context, '/registro'),
+                      onPressed: () => context.go('/register'),
                       style: OutlinedButton.styleFrom(
                         side: BorderSide(color: primaryColor, width: 2),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),

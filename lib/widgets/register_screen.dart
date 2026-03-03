@@ -1,21 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 // --- PÁGINA 3: REGISTRO ---
 class RegisterScreen extends StatelessWidget {
+  const RegisterScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      // --- APPBAR CON BOTÓN DE RETROCESO ---
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => context.pop(), // Vuelve a la pantalla anterior (Login)
+        ),
+      ),
       body: Stack(
         children: [
           SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 50.0),
+            padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0), // Ajuste de padding
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // --- LOGO CLICKEABLE TAMBIÉN EN REGISTRO ---
+                // --- LOGO CLICKEABLE ---
                 GestureDetector(
-                  onTap: () => Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false),
+                  onTap: () => context.go('/splash'),
                   child: const Text('M', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold)),
                 ),
                 const Text('Mueblería', style: TextStyle(fontSize: 16)),
@@ -30,25 +42,25 @@ class RegisterScreen extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 30),
-                Row(
+                const Row(
                   children: [
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('Nombre', style: TextStyle(fontWeight: FontWeight.w500)),
-                          const SizedBox(height: 5),
+                          Text('Nombre', style: TextStyle(fontWeight: FontWeight.w500)),
+                          SizedBox(height: 5),
                           TextField(decoration: InputDecoration(border: OutlineInputBorder())),
                         ],
                       ),
                     ),
-                    const SizedBox(width: 15),
+                    SizedBox(width: 15),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('Apellido', style: TextStyle(fontWeight: FontWeight.w500)),
-                          const SizedBox(height: 5),
+                          Text('Apellido', style: TextStyle(fontWeight: FontWeight.w500)),
+                          SizedBox(height: 5),
                           TextField(decoration: InputDecoration(border: OutlineInputBorder())),
                         ],
                       ),
@@ -90,7 +102,8 @@ class RegisterScreen extends StatelessWidget {
                   width: double.infinity,
                   height: 55,
                   child: ElevatedButton(
-                    onPressed: () => Navigator.pop(context),
+                    // --- ACCIÓN CAMBIADA ---
+                    onPressed: () => context.go('/home'), // Navega a home al crear la cuenta
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFFC5CAE9),
                       foregroundColor: Colors.black87,
@@ -99,14 +112,15 @@ class RegisterScreen extends StatelessWidget {
                         side: const BorderSide(color: Colors.black45),
                       ),
                     ),
-                    child: const Text('Registrar y Volver', style: TextStyle(fontSize: 18)),
+                    // --- TEXTO DEL BOTÓN CAMBIADO ---
+                    child: const Text('Crear Cuenta', style: TextStyle(fontSize: 18)),
                   ),
                 ),
               ],
             ),
           ),
           Positioned(
-            top: 50,
+            top: 10, // Ajustado a la nueva AppBar
             right: 20,
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
