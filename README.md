@@ -1,18 +1,22 @@
-# IAMoviles Act 13 navegacion entre 6 pantallas
+# IAMoviles-Actividad-navegaci-n-entre-6-pantallas
 
-# Web 💻🖥️
-<img width="1091" height="766" alt="image" src="https://github.com/user-attachments/assets/151755dc-5bb0-4dc5-af8a-c28f9cf5620c" />
-<img width="1450" height="737" alt="image" src="https://github.com/user-attachments/assets/07d98adc-e814-4c95-99d2-beb52999a6fe" />
-<img width="1452" height="148" alt="image" src="https://github.com/user-attachments/assets/f79f5f77-dbf2-474c-9a27-319d423ec7ab" />
-<img width="1475" height="748" alt="image" src="https://github.com/user-attachments/assets/5161c8ae-4c87-443a-809e-1f695c2342ff" />
-<img width="1455" height="297" alt="image" src="https://github.com/user-attachments/assets/c70f0c34-59a7-4c58-a979-3a4f241f86d5" />
-<img width="1447" height="768" alt="image" src="https://github.com/user-attachments/assets/951cbff8-ab31-4d1e-adf5-ad55ac9a5e61" />
-<img width="1526" height="595" alt="image" src="https://github.com/user-attachments/assets/7a1a74a3-1b4b-4f7e-b2b9-f63ae9d06f02" />
-<img width="1468" height="567" alt="image" src="https://github.com/user-attachments/assets/bacd936e-010d-429a-8633-83e5380ae7a1" />
-<img width="1448" height="705" alt="image" src="https://github.com/user-attachments/assets/0ed47e2f-bc9f-405e-9ef3-f8de7752dca9" />
-<img width="1453" height="203" alt="image" src="https://github.com/user-attachments/assets/60366f16-f232-4b19-a14f-e40ac12c9d02" />
-<img width="1472" height="675" alt="image" src="https://github.com/user-attachments/assets/f64fc2c6-5f67-43f9-a79a-9a2b284880b8" />
-<img width="1455" height="301" alt="image" src="https://github.com/user-attachments/assets/4e8e277e-94c7-4c54-9f2b-ce2872824c29" />
+# Web 💻🖥
+<img width="1251" height="841" alt="image" src="https://github.com/user-attachments/assets/c1507cfc-69e1-4785-ba3f-f117093e608b" />
+<img width="1279" height="854" alt="image" src="https://github.com/user-attachments/assets/da690873-0436-4062-8c3e-5bac2c43d072" />
+<img width="1299" height="872" alt="image" src="https://github.com/user-attachments/assets/f4326f17-061e-4dfd-9d31-426d00041bbf" />
+<img width="1249" height="822" alt="image" src="https://github.com/user-attachments/assets/5b22088f-7522-41a2-89b9-7982139fd782" />
+<img width="1258" height="755" alt="image" src="https://github.com/user-attachments/assets/5f3fc0bf-4374-4aaa-ad85-57acbe6beabb" />
+<img width="1252" height="825" alt="image" src="https://github.com/user-attachments/assets/e034bcaf-8e92-45bf-9433-489c1ac788ff" />
+<img width="1259" height="842" alt="image" src="https://github.com/user-attachments/assets/a2345d0d-a4d6-4697-bf3d-e67a88dd4867" />
 
-# Android 📱📲
 
+# Android 📱
+<img width="527" height="823" alt="image" src="https://github.com/user-attachments/assets/e39aa4f5-6adf-4462-a7a7-4fbae77c5956" />
+<img width="495" height="713" alt="image" src="https://github.com/user-attachments/assets/3d51ee1f-2c55-4613-8317-6444a4c9241c" />
+<img width="535" height="180" alt="image" src="https://github.com/user-attachments/assets/74671be5-dcae-4029-80b6-baaaf3657997" />
+<img width="514" height="741" alt="image" src="https://github.com/user-attachments/assets/a3abc7ec-bd79-4aa8-91fb-aa70535a95ef" />
+<img width="515" height="199" alt="image" src="https://github.com/user-attachments/assets/ca674a2f-35ee-4797-b311-29201476fa77" />
+<img width="528" height="796" alt="image" src="https://github.com/user-attachments/assets/674f195f-f961-407f-bc9f-6fbe94278686" />
+<img width="524" height="725" alt="image" src="https://github.com/user-attachments/assets/1640f246-bcbb-4dbf-aa1d-e053bd21e138" />
+<img width="526" height="147" alt="image" src="https://github.com/user-attachments/assets/aefb6b81-b1cf-4647-a930-f7a7f668ad97" />
+<img width="496" height="808" alt="image" src="https://github.com/user-attachments/assets/9901a51c-f8f4-4eba-b009-b7f3560d9b1d" />
