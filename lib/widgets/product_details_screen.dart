@@ -14,11 +14,11 @@ class ProductDetailsScreen extends StatelessWidget {
         elevation: 4,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white), // Icono blanco
-          onPressed: () => context.pop(), // CORREGIDO
+          onPressed: () => context.pop(), // CORRECTO: Esto te regresa a la pantalla anterior
         ),
         title: GestureDetector(
           onTap: () {
-            context.go('/splash'); // Navega a la pantalla de bienvenida
+            context.goNamed('splash'); // Navega a la pantalla de bienvenida
           },
           child: Text(
             'Mueblería Carrasco',
@@ -40,7 +40,7 @@ class ProductDetailsScreen extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.shopping_cart_outlined, color: Colors.white), // Icono blanco
             onPressed: () {
-              context.go('/checkout'); // Navega a la pantalla de pago
+              context.pushNamed('checkout'); // CORREGIDO: Navegación por nombre
             },
           ),
         ],
@@ -171,7 +171,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   // Botón de añadir al carrito
                   ElevatedButton.icon(
                     onPressed: () {
-                      context.go('/checkout'); // ¡AQUÍ ESTÁ LA MAGIA!
+                      context.pushNamed('checkout'); // CORREGIDO: Navegación por nombre
                     },
                     icon: const Icon(Icons.add_shopping_cart, color: Colors.white),
                     label: Text(

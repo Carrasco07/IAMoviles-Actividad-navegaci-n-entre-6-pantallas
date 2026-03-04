@@ -8,7 +8,6 @@ import 'package:myapp/widgets/pantalla_splash.dart';
 import 'package:myapp/widgets/product_details_screen.dart';
 import 'package:myapp/widgets/register_screen.dart';
 
-// La función main ahora es síncrona y no tiene inicialización de Firebase
 void main() {
   runApp(const MuebleriaCarrasco());
 }
@@ -18,39 +17,49 @@ final GoRouter _router = GoRouter(
   routes: <RouteBase>[
     GoRoute(
       path: '/splash',
+      name: 'splash', // AÑADIDO
       builder: (BuildContext context, GoRouterState state) {
         return const PantallaSplash();
       },
     ),
     GoRoute(
       path: '/login',
+      name: 'login', // AÑADIDO
       builder: (BuildContext context, GoRouterState state) {
         return const LoginPage();
       },
     ),
     GoRoute(
       path: '/register',
+      name: 'register', // AÑADIDO
       builder: (BuildContext context, GoRouterState state) {
         return const RegisterScreen();
       },
     ),
     GoRoute(
       path: '/home',
+      name: 'home', // AÑADIDO
       builder: (BuildContext context, GoRouterState state) {
         return const HomePage();
       },
-    ),
-    GoRoute(
-      path: '/product-details',
-      builder: (BuildContext context, GoRouterState state) {
-        return const ProductDetailsScreen();
-      },
-    ),
-    GoRoute(
-      path: '/checkout',
-      builder: (BuildContext context, GoRouterState state) {
-        return const CheckoutScreen();
-      },
+      routes: <RouteBase>[
+        GoRoute(
+          path: 'product-details',
+          name: 'product-details', // AÑADIDO
+          builder: (BuildContext context, GoRouterState state) {
+            return const ProductDetailsScreen();
+          },
+          routes: <RouteBase>[
+            GoRoute(
+              path: 'checkout',
+              name: 'checkout', // AÑADIDO
+              builder: (BuildContext context, GoRouterState state) {
+                return const CheckoutScreen();
+              },
+            ),
+          ],
+        ),
+      ],
     ),
   ],
 );

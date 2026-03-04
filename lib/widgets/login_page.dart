@@ -77,7 +77,8 @@ class LoginPage extends StatelessWidget {
                     const Text("¿No tienes una cuenta?", style: TextStyle(fontSize: 15)),
                     const SizedBox(height: 10),
                     OutlinedButton(
-                      onPressed: () => context.go('/register'),
+                      // --- CORRECCIÓN APLICADA ---
+                      onPressed: () => context.pushNamed('register'), // Usamos pushNamed para apilar la pantalla
                       style: OutlinedButton.styleFrom(
                         side: BorderSide(color: primaryColor, width: 2),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),

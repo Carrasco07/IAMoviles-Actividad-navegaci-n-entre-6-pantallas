@@ -122,8 +122,8 @@ class HomePage extends StatelessWidget {
   Widget _productCard(BuildContext context, String name, String price, String imageUrl) {
     return GestureDetector(
       onTap: () {
-        // Navega a la pantalla de detalles del producto
-        context.go('/product-details');
+        // Navega usando el NOMBRE de la ruta
+        context.pushNamed('product-details'); // CORREGIDO
       },
       child: Card(
         elevation: 3,

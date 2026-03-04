@@ -14,7 +14,7 @@ class CheckoutScreen extends StatelessWidget {
         elevation: 4,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),
-          onPressed: () => context.pop(), // CORREGIDO
+          onPressed: () => context.pop(), // CORRECCIÓN CONFIRMADA
         ),
         title: GestureDetector(
           onTap: () {
